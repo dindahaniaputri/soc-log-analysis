@@ -23,7 +23,7 @@ This project aims to analyze web logs using Splunk to detect suspicious activity
 
 
 ## Detailed Log Analysis
-<img width="1920" height="908" alt="time chart" src="https://github.com/user-attachments/assets/46a8cf91-09b3-4415-a01a-487441212a74" />
+<img width="1920" height="908" alt="time chart" src="https://github.com/user-attachments/assets/16ec7f8d-153d-4263-b45c-2503de7170f6" />
 
 ## User-Agent Analysis
 <img width="1920" height="910" alt="useragent" src="https://github.com/user-attachments/assets/1a30171a-2c14-4368-a202-95fa39cba0dd" />
