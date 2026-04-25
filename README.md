@@ -14,20 +14,19 @@ This project aims to analyze web logs using Splunk to detect suspicious activity
 - Analyzed user-agent to determine if activity was automated
 
 ## Status Overview
-<img width="1920" height="1080" alt="Screenshot 2026-04-21 210703" src="https://github.com/user-attachments/assets/dab46d9c-0fdf-4679-ba5d-15c12460c402" />
+<img width="1920" height="738" alt="by stats" src="https://github.com/user-attachments/assets/8acf9d3f-33fe-4476-979e-75b20c6a05a6" />
+
 
 
 ## Suspicious IP Detection
-<img width="1920" height="1080" alt="Screenshot 2026-04-21 211323" src="https://github.com/user-attachments/assets/70906391-4241-4326-99c9-e9606318b1eb" />
+<img width="1920" height="910" alt="by clientip" src="https://github.com/user-attachments/assets/d50d6fc5-7932-43ea-96a5-a80be8b34340" />
 
 
 ## Detailed Log Analysis
-<img width="1920" height="1080" alt="Screenshot 2026-04-22 160743" src="https://github.com/user-attachments/assets/82975c28-0b33-4ca7-bac2-df2abc793a69" />
-
+<img width="1920" height="908" alt="time chart" src="https://github.com/user-attachments/assets/46a8cf91-09b3-4415-a01a-487441212a74" />
 
 ## User-Agent Analysis
-<img width="1920" height="1080" alt="Screenshot 2026-04-22 162641" src="https://github.com/user-attachments/assets/12f72f3c-d856-46bf-a198-97330aa74f1e" />
-
+<img width="1920" height="910" alt="useragent" src="https://github.com/user-attachments/assets/1a30171a-2c14-4368-a202-95fa39cba0dd" />
 
 ## Findings
 - IP 208.91.156.11 generated many requests
