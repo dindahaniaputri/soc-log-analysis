@@ -1,8 +1,8 @@
-# Web Log Analysis using Splunk
+# SOC Log Analysis using Splunk
 
 ## Objective
 This project aims to analyze web logs using Splunk to detect suspicious activity.
-
+This project simulates basic SOC investigation workflow.
 ## Tools
 - Splunk
 - Apache Logs
@@ -12,6 +12,7 @@ This project aims to analyze web logs using Splunk to detect suspicious activity
 - Identified IPs generating high number of 404 errors
 - Investigated specific IP behavior
 - Analyzed user-agent to determine if activity was automated
+
 
 ## Status Overview
 <img width="1920" height="738" alt="by stats" src="https://github.com/user-attachments/assets/8acf9d3f-33fe-4476-979e-75b20c6a05a6" />
@@ -40,9 +41,11 @@ The repeated requests to a non-existent file indicate abnormal behavior.
 The use of "Chef Client" suggests automated activity rather than a human user.
 
 This pattern is consistent with scanning or probing attempts.
+The behavior is not typical of normal users and indicates possible automated scanning activity.
 
 ## Conclusion
 The activity is classified as suspicious due to repeated failed requests and automated behavior.
+From a SOC analyst perspective, this activity would be classified as low to medium severity and should be monitored for further escalation.
 
 ## Recommendation
 - Monitor the IP for further activity
