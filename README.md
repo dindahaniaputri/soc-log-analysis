@@ -34,6 +34,7 @@ This project simulates basic SOC investigation workflow.
 - Targeted a non-existent file
 - All responses returned 404
 - User-agent identified as "Chef Client"
+- - The activity was repeated in a short time frame
 
 ## Analysis
 The repeated requests to a non-existent file indicate abnormal behavior.
