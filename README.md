@@ -1,4 +1,4 @@
-<img width="1907" height="913" alt="Screenshot 2026-04-28 210155" src="https://github.com/user-attachments/assets/b34a95a1-405e-447e-9665-7baa03dd215d" /># SOC Log Analysis using Splunk
+# SOC Log Analysis using Splunk
 
 ## Objective
 This project aims to analyze web logs using Splunk to detect suspicious activity.
