@@ -1,4 +1,4 @@
-# SOC Log Analysis using Splunk
+<img width="1907" height="913" alt="Screenshot 2026-04-28 210155" src="https://github.com/user-attachments/assets/b34a95a1-405e-447e-9665-7baa03dd215d" /># SOC Log Analysis using Splunk
 
 ## Objective
 This project aims to analyze web logs using Splunk to detect suspicious activity.
@@ -52,3 +52,237 @@ From a SOC analyst perspective, this activity would be classified as low to medi
 - Monitor the IP for further activity
 - Investigate similar patterns
 - Consider blocking if confirmed malicious
+
+
+
+
+
+
+
+
+---
+
+## 🔥 Brute Force Attack Detection using Splunk
+
+### Objective
+This project aims to detect brute force attacks by analyzing authentication logs.
+
+### Tools
+- Splunk
+- JSON Logs
+
+### Analysis Process
+- Extracted fields using spath
+- Expanded password arrays using mvexpand
+- Counted password attempts per username
+- Identified common password patterns
+
+### Screenshots
+
+#### Username Target Analysis
+<img width="1907" height="913" alt="Screenshot 2026-04-28 210155" src="https://github.com/user-attachments/assets/f301550b-c7df-4cd1-9bac-c14eb1ca71d1" />
+
+
+#### Password Pattern Analysis
+<img width="1916" height="909" alt="Screenshot 2026-04-28 210336" src="https://github.com/user-attachments/assets/aa29a896-6546-4c62-a9c5-7476e8877323" />
+
+
+
+### Findings
+- The "root" account received the highest number of login attempts (over 400,000 attempts)
+- Other accounts such as "admin" and "ubuntu" were also targeted
+- Common passwords such as "123456", "password", and "admin" were frequently used
+
+### Analysis
+This behavior indicates a dictionary-based brute force attack, where attackers use common passwords to gain access.
+
+The "root" account is a high-privilege account, making it a primary target.
+
+### Conclusion
+The activity is classified as a high-risk brute force attack targeting privileged accounts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
