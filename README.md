@@ -62,7 +62,7 @@ From a SOC analyst perspective, this activity would be classified as low to medi
 
 ---
 
-## 🔥 Brute Force Attack Detection using Splunk
+## Brute Force Attack Detection using Splunk
 
 ### Objective
 This project aims to detect brute force attacks by analyzing authentication logs.
