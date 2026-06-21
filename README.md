@@ -182,7 +182,8 @@ No abnormal TCP behavior was observed during this capture.
 ## TLS Traffic Analysis
 
 
-![Uploading Screenshot 2026-06-21 134211.png…]()
+<img width="1512" height="760" alt="Screenshot 2026-06-21 134211" src="https://github.com/user-attachments/assets/c04e0f8a-c673-4c72-a05d-afecd9df4cd6" />
+
 
 
 
