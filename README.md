@@ -103,7 +103,133 @@ The activity is classified as a high-risk brute force attack targeting privilege
 
 
 
+# Network Traffic Analysis Using Wireshark
 
+## Overview
+
+This project demonstrates basic network traffic analysis using Wireshark. The objective is to identify common network protocols and understand how devices communicate during normal web browsing activities.
+
+---
+
+## Tools Used
+
+- Wireshark
+- Windows 11
+- Wi-Fi Network
+
+---
+
+## DNS Analysis
+
+<img width="1536" height="683" alt="Screenshot 2026-06-21 133557" src="https://github.com/user-attachments/assets/2526afec-9c7d-40fe-9817-4202a47a3011" />
+
+
+
+
+### Findings
+
+The DNS filter was used to capture domain name resolution traffic.
+
+Observed domains:
+
+- www.google.com
+- optimizationguide-pa.googleapis.com
+
+The system performed both IPv4 (A) and IPv6 (AAAA) lookups to resolve domain names into IP addresses.
+
+### Security Analysis
+
+DNS traffic can help SOC analysts identify:
+
+- Suspicious domains
+- Malware command-and-control communication
+- Unauthorized external connections
+
+During this analysis, no suspicious domain activity was detected.
+
+---
+
+## TCP Three-Way Handshake Analysis
+
+<img width="1532" height="762" alt="Screenshot 2026-06-21 133824" src="https://github.com/user-attachments/assets/523c3e52-fc0e-4428-ab96-e2b833a5a96d" />
+
+
+### Findings
+
+TCP SYN packets were captured to observe connection establishment between the client and remote servers.
+
+Observed process:
+
+1. SYN
+2. SYN-ACK
+3. ACK
+
+This sequence confirms a successful TCP three-way handshake.
+
+### Security Analysis
+
+SOC analysts use TCP handshake analysis to detect:
+
+- Port scanning
+- Connection anomalies
+- SYN flood attacks
+- Unauthorized network activity
+
+No abnormal TCP behavior was observed during this capture.
+
+---
+
+## TLS Traffic Analysis
+
+
+![Uploading Screenshot 2026-06-21 134211.png…]()
+
+
+
+### Findings
+
+Encrypted HTTPS traffic was identified using TLSv1.2 and QUIC protocols.
+
+Observed:
+
+- TLSv1.2 Application Data
+- QUIC traffic
+- Encrypted communications between the client and external servers
+
+### Security Analysis
+
+TLS traffic analysis helps SOC analysts:
+
+- Identify encrypted communications
+- Verify secure connections
+- Investigate suspicious destination IP addresses
+- Monitor external communications
+
+The captured traffic appeared consistent with normal web browsing behavior.
+
+---
+
+## Conclusion
+
+This project demonstrated the analysis of three important network communication components:
+
+- DNS name resolution
+- TCP connection establishment
+- TLS encrypted communications
+
+The captured traffic showed normal browsing activity with no evidence of suspicious behavior.
+
+---
+
+## Skills Demonstrated
+
+- Network Traffic Analysis
+- Wireshark
+- DNS Analysis
+- TCP Three-Way Handshake Analysis
+- TLS Traffic Analysis
+- Security Monitoring
+- SOC Fundamentals
 
 
 
