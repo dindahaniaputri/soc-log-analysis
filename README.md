@@ -236,22 +236,535 @@ The captured traffic showed normal browsing activity with no evidence of suspici
 
 
 
+# Install Web Server and DVWA Setup
+
+## Overview
+
+This project demonstrates the deployment of a vulnerable web application environment for cybersecurity auditing and penetration testing.
+
+The objective was to build a realistic target environment by installing Apache Web Server, PHP, MariaDB, and Damn Vulnerable Web Application (DVWA) on Ubuntu Server.
+
+## Tools Used
+
+- Ubuntu Server
+- Apache2
+- PHP
+- MariaDB
+- DVWA
+- Kali Linux
+- VirtualBox
+
+## Environment
+
+- Target Machine: Ubuntu Server
+- Auditor Machine: Kali Linux
+- Web Server: Apache2
+- Database: MariaDB
+- Application: DVWA
+
+---
+
+## 1. Apache Web Server Installation
+
+### Objective
+
+Install and configure Apache Web Server.
+
+### Findings
+
+- Apache installed successfully.
+- Web service was accessible from the network.
+
+### Security Analysis
+
+A running web service provides the foundation for application deployment and security testing.
+
+---
+
+## 2. PHP Installation
+
+### Objective
+
+Install PHP for dynamic web application support.
+
+### Findings
+
+- PHP installed successfully.
+- Apache processed PHP applications correctly.
+
+### Security Analysis
+
+Dynamic web applications process user input and may introduce security risks if not properly validated.
+
+---
+
+## 3. MariaDB Installation
+
+### Objective
+
+Deploy the database server.
+
+### Findings
+
+- MariaDB installed successfully.
+- Database service was operational.
+
+### Security Analysis
+
+The database stores sensitive information and should be securely configured.
+
+---
+
+## 4. DVWA Installation
+
+### Objective
+
+Deploy the Damn Vulnerable Web Application.
+
+### Findings
+
+- DVWA installed successfully.
+- Application database configured.
+- Login page accessible.
+
+### Security Analysis
+
+DVWA provides a safe environment for learning web application security testing.
+
+---
+
+## Key Findings
+
+- Apache Web Server successfully deployed.
+- PHP configured correctly.
+- MariaDB database operational.
+- DVWA successfully installed.
+- Web application accessible from Kali Linux.
+
+---
+
+## Skills Demonstrated
+
+- Linux Administration
+- Apache Web Server
+- PHP Configuration
+- MariaDB
+- Web Application Deployment
+- Security Lab Setup
+
+---
+
+## Screenshots
+
+### Apache Service Status
+
+<img width="900" height="563" alt="image" src="https://github.com/user-attachments/assets/6b4f89ac-7441-46b9-b159-059584af8dcf" />
+
+
+### Apache Default Page
+
+<img width="938" height="503" alt="image" src="https://github.com/user-attachments/assets/710e4cde-6edb-49be-b013-1ddbd1a7618d" />
+
+
+### DVWA Installation
+
+<img width="830" height="519" alt="image" src="https://github.com/user-attachments/assets/f572327b-d963-404a-b8d6-d3258f46dca4" />
+
+
+### Database Configuration
+
+<img width="880" height="550" alt="image" src="https://github.com/user-attachments/assets/5f78d113-2e22-4cd5-83af-f3e8690d1066" />
+
+
+### DVWA Configuration
+
+<img width="980" height="613" alt="image" src="https://github.com/user-attachments/assets/c7b1f900-eace-4c65-95ea-3c181313221e" />
+
+
+### DVWA Login
+
+<img width="961" height="518" alt="image" src="https://github.com/user-attachments/assets/a2c27fbe-3769-4f80-bc8b-5e284ada4640" />
+
+
+---
+
+## Conclusion
+
+This project demonstrates the deployment of a vulnerable web application environment used for cybersecurity auditing, penetration testing, and web application security assessment.
 
 
 
 
 
+# Network Service Discovery Using Nmap
+
+## Overview
+
+This project demonstrates network reconnaissance and service discovery using Nmap in a controlled cybersecurity audit laboratory environment.
+
+The objective was to identify exposed services, discover running software, and evaluate information disclosure risks from a network perspective.
+
+## Tools Used
+
+- Nmap
+- Kali Linux
+- Ubuntu Server
+- VirtualBox
+
+## Environment
+
+- Auditor Machine: Kali Linux
+- Target Machine: Ubuntu Server
+- Target Address: 10.0.2.2
+- Exposed Service Port: 8080
+
+---
+
+## 1. Basic Port Scan
+
+### Objective
+
+Identify open ports exposed to the network.
+
+### Command
+
+```bash
+nmap -p 8080 10.0.2.2
+```
+
+### Findings
+
+- Port 8080/TCP was open.
+- The service was accessible from the network.
+
+### Security Analysis
+
+Open ports increase the organization's attack surface.
+
+---
+
+## 2. Service Version Detection
+
+### Command
+
+```bash
+nmap -sV -p 8080 10.0.2.2
+```
+
+### Findings
+
+- Apache HTTP Server detected.
+- Service version information exposed.
+
+---
+
+## 3. Operating System Detection
+
+### Command
+
+```bash
+sudo nmap -O 10.0.2.2
+```
+
+### Findings
+
+- Operating system successfully identified.
+
+---
+
+## 4. Aggressive Scan
+
+### Command
+
+```bash
+sudo nmap -A -p 8080 10.0.2.2
+```
+
+### Findings
+
+- Service version detected.
+- Operating system detected.
+- Information disclosure identified.
+
+---
+
+## Skills Demonstrated
+
+- Network Reconnaissance
+- Service Enumeration
+- Port Scanning
+- OS Detection
+- Security Assessment
+
+---
+
+## Screenshots
+
+### Basic Port Scan
+
+<img width="801" height="565" alt="image" src="https://github.com/user-attachments/assets/a11d5fba-287f-4754-ab5c-31f26d048923" />
+
+
+### Service Detection
+
+<img width="845" height="663" alt="image" src="https://github.com/user-attachments/assets/5101b0eb-002b-4e6a-a7fc-2b60ad947c1f" />
+
+### Operating System Detection
+
+
+<img width="895" height="672" alt="image" src="https://github.com/user-attachments/assets/cf4b7da4-357c-4bc8-aa5a-97fc51a3cda0" />
+
+### Aggressive Scan
+
+<img width="843" height="680" alt="image" src="https://github.com/user-attachments/assets/9dc6d34a-ff91-4138-8746-38686c0b19c5" />
+<img width="794" height="622" alt="image" src="https://github.com/user-attachments/assets/511fdba2-a4eb-46fa-b9d3-04ac8d766806" />
+
+
+
+---
+
+## Conclusion
+
+This project demonstrates how Nmap can be used to perform reconnaissance and identify exposed services during a cybersecurity assessment.
+
+
+
+# Web Application Vulnerability Testing Using DVWA
+
+## Overview
+
+This project demonstrates web application vulnerability testing using Damn Vulnerable Web Application (DVWA).
+
+The objective was to identify common web vulnerabilities including Authentication Weaknesses, SQL Injection, and Cross-Site Scripting (XSS).
+
+## Tools Used
+
+- DVWA
+- Kali Linux
+- Ubuntu Server
+- Apache
+- MariaDB
+
+---
+
+## 1. Authentication Weakness Testing
+
+### Findings
+
+- Unlimited login attempts allowed.
+- No account lockout implemented.
+
+### Security Analysis
+
+Weak authentication controls allow brute force attacks.
+
+---
+
+## 2. SQL Injection Testing
+
+### Payload
+
+```sql
+1' OR '1'='1
+```
+
+### Findings
+
+- Multiple user records returned.
+- Input validation not implemented.
+
+---
+
+## 3. Cross-Site Scripting (XSS)
+
+### Payload
+
+```html
+<script>alert('Hacked')</script>
+```
+
+### Findings
+
+- JavaScript executed successfully.
+- User input reflected without validation.
+
+---
+
+## Key Findings
+
+- Authentication Weakness
+- SQL Injection
+- Cross-Site Scripting (XSS)
+
+---
+
+## Skills Demonstrated
+
+- Web Security Testing
+- SQL Injection
+- XSS
+- Authentication Testing
+- Vulnerability Assessment
+
+---
+
+## Screenshots
+
+### DVWA Login
+<img width="888" height="978" alt="image" src="https://github.com/user-attachments/assets/fbfea60a-7378-4f00-9676-b4d3282cc9da" />
+
+
+### Security Level
+<img width="975" height="883" alt="image" src="https://github.com/user-attachments/assets/82d3d183-5534-4d2b-a645-2c025bb40e53" />
+
+
+
+### Authentication Weakness
+
+<img width="765" height="714" alt="image" src="https://github.com/user-attachments/assets/8f22b5bc-f004-4de8-8fc2-cbab1d078ff3" />
+
+
+### SQL Injection
+
+<img width="882" height="796" alt="image" src="https://github.com/user-attachments/assets/0ff64f1d-156c-4495-a5bf-83a858397b2e" />
+<img width="888" height="803" alt="image" src="https://github.com/user-attachments/assets/7ce06d95-0555-4939-84f0-32ac198c9850" />
+
+
+
+### XSS Testing
+
+<img width="833" height="752" alt="image" src="https://github.com/user-attachments/assets/e40ea200-5145-4e20-95be-eee6e2b6f858" />
+
+
+### XSS Popup
+
+<img width="975" height="468" alt="image" src="https://github.com/user-attachments/assets/6aecacb5-2e4d-45c8-86ea-deaee744fe9b" />
+
+
+---
+
+## Conclusion
+
+This project demonstrates the identification of common web application vulnerabilities and their impact on application security.
 
 
 
 
+# Security Monitoring Audit Using Wazuh SIEM
+
+## Overview
+
+This project demonstrates security monitoring and incident detection using Wazuh SIEM in a controlled cybersecurity laboratory environment.
+
+The objective was to evaluate security monitoring capabilities through simulated attack scenarios.
+
+## Tools Used
+
+- Wazuh SIEM
+- Kali Linux
+- Ubuntu Server
+- DVWA
+- VirtualBox
+
+---
+
+## 1. Wazuh Agent Verification
+
+### Findings
+
+- Agent connected successfully.
+- Security logs transmitted correctly.
+
+---
+
+## 2. SSH Brute Force Detection
+
+### Findings
+
+- Multiple failed login attempts detected.
+- Authentication alerts generated.
+
+---
+
+## 3. File Integrity Monitoring
+
+### Findings
+
+- File modifications detected.
+- Integrity alerts generated.
+
+---
+
+## 4. SQL Injection Detection
+
+### Findings
+
+- SQL Injection activity detected.
+- Web security alerts generated.
+
+---
+
+## Key Findings
+
+- Authentication Monitoring
+- File Integrity Monitoring
+- Web Attack Detection
+- SIEM Alerting
+
+---
+
+## Skills Demonstrated
+
+- SIEM
+- Security Monitoring
+- Incident Detection
+- Log Analysis
+- Threat Detection
+
+---
+
+## Screenshots
+
+### Wazuh Agent
+
+<img width="975" height="691" alt="image" src="https://github.com/user-attachments/assets/99a42cf7-51bf-487c-8594-ac6416c26fa2" />
+
+### Wazuh Dashboard
+
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/22f39e8c-dbd3-4513-8488-2496256ac0f6" />
 
 
+### Agent Summary
+
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/f7b9cbc0-5c39-4099-a9bf-0ff703e7f70e" />
 
 
+### SSH Brute Force Alert
+
+<img width="975" height="835" alt="image" src="https://github.com/user-attachments/assets/a5a3235d-0a64-4f28-938c-15513ead49a1" />
 
 
+### Authentication Logs
 
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/5b111231-4bb5-45db-af59-42b315597c02" />
+<img width="975" height="549" alt="image" src="https://github.com/user-attachments/assets/102e3374-075b-4ee5-a6fa-016ebe13a5ee" />
+
+
+### File Integrity Monitoring
+
+<img width="975" height="731" alt="image" src="https://github.com/user-attachments/assets/c189b5cf-fca6-43b3-9f66-d0952757c605" />
+
+
+### SQL Injection Alert
+
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/b74feabf-e285-4903-9822-d500ca0fdcb2" />
+
+
+---
+
+## Conclusion
+
+This project demonstrates the use of Wazuh SIEM to monitor security events, detect attacks, and investigate incidents in a Linux environment.
 
 
 
